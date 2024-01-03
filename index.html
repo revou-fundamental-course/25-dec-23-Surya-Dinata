@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LUKAS</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/icon.png">
+        <script type="text/javascript" src="js/script.js"></script>    
+    </head>
+    <body>
+        <header class="navbar">
+            <span><h1 class="navbar">LUKAS</h1></span>
+         
+            <span><h4 class="navbar">Luas Keliling Segitiga</h4></span>
+        </header>
+        <main class="">
+            <h3 class="content">WELCOME TO LUKAS</h3>
+            <p class="content">Hai sobat, selamat datang di LUKAS :)</p>
+            <P class="content"> Sebuah web apps sederhana yang digunakan untuk menghitung <b>Luas dan Keliling Segitiga</b></P>
+            <nav class="selection-buttons"><center>
+                <button class="buttons" id="cot-button"><a href="#luas">Luas Segitiga</a></button>
+                <button class="buttons" id="aot-button"><a href="#kel">Keliling Segitiga</a></button>
+            </center></nav>
+            
+            <h3 class="sub" id="luas">Luas Segitiga</h3>
+            <!-- aot = Area of Triangle -->
+            <div class="img">
+                <img src="img/gambar3.png" alt="gambar segitiga">
+            </div>
+
+            <p>Untuk menghitung Luas segitiga menggunakan rumus :</p>
+            <center><h3><b>L = 1/2 x a x t</b></h3></center>
+            <p>dimana diketahui :0</p>
+            <p>L = luas</p>
+            <p>a = alas</p>
+            <p>t = tinggi</p>
+
+            <h3 class="sub">Menghitung Luas Segitiga</h3>
+
+            <div class="input-luas-selection" id="luas-result">
+                <label class="input-labels" for="base">Alas</label>
+                <input class="inputs" type="number" id="base" placeholder="Masukan alas">
+            
+                <label class="input-labels" for="height">Tinggi</label>
+                <input class="inputs" type="number" id="height" placeholder="Masukan tinggi">
+            </div>
+            <div class="result-button">
+                <button class="buttons" onclick="calculateArea()">Hitung</button>
+                <button class="buttons" onclick="resetAreaForm()">Reset</button>
+            </div>
+            <h3>Hasil :</h3>
+            <p class="result" id="resultArea"></p>
+            
+            <div>
+                <h3 class="sub" id="kel">Keliling Segitiga</>
+                <!-- cot = Circumference of Triangle -->
+            </div>
+            <div class="img">
+                <img src="img/Gambar1.png" alt="gambar segitiga">
+            </div>
+
+            <p>Untuk menghitung Keliling segitiga menggunakan rumus :</p>
+            <center><h3><b>K = s1+s2+s3</b></h3></center>
+            <p>dimana diketahui :</p>
+            <p>K = keliling</p>
+            <p>s1 = sisi 1</p>
+            <p>s2 = sisi 2</p>
+            <p>s3 = sisi 3</p>
+
+            <h3 class="sub">Menghitung Keliling Segitiga</h3>
+
+            <div class="input-kel-selection" id="cot-result">
+                <label class="input-labels" for="sideA">Side A</label>
+                <input class="inputs" type="number" id="sideA" placeholder="Masukan sisi a">
+            
+                <label class="input-labels" for="sideB">Side B</label>
+                <input class="inputs" type="number" id="sideB" placeholder="Masukan sisi b">
+            
+                <label class="input-labels" for="sideC">Side C</label>
+                <input class="inputs" type="number" id="sideC" placeholder="Masukan sisi c">
+            </div>
+            <div class="result-button">
+                <button class="buttons" onclick="calculateCircumference()">hitung</button>
+                <button class="buttons" onclick="resetCircumferenceForm()">Reset</button>
+            </div>
+
+            <h3> Hasil :</h3>
+            <p class="result" id='resultCircumference'></p>
+
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Pratama Surya Dinata <br> Gmail : pratamadinata3117@gmail.com</p>
+    </body>
+</html>
